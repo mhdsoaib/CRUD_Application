@@ -1,0 +1,14 @@
+● src
++---● app
+|   +--● Employee-details
+|   |  |--Employee-details.component.ts|.html
+|   |  +--● Employee-detail-form
+|   |  |  |--Employee-detail-form.component.ts|.html
+|   |  
+|   +--● shared
+|   |  |--Employee-detail.service.ts
+|   |  |--Employee-detail.model.ts
+|   |
+|   |--app.module.ts
+|
+|--index.html (cdn path for bootstrap & fa icons)

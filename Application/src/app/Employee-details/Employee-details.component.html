@@ -1,0 +1,36 @@
+<div class="jumbotron py-3">
+    <h1 class="display-4 text-center">Employee Management App</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <app-Employee-detail-form></app-Employee-detail-form>
+    </div>
+    <div class="col-md-6">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>EmployeeName</th>
+                    <th>Designation</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pd of EmployeeList">
+                    <td (click)="populateForm(pd)">{{pd.employeeName}}</td>
+                    <td (click)="populateForm(pd)">{{pd.designation}}</td>
+                    <td (click)="populateForm(pd)">{{pd.email}}</td>
+                    <td (click)="populateForm(pd)">{{pd.address}}</td>
+                    <td (click)="populateForm(pd)">{{pd.city}}</td>
+                    
+                    <td>
+                        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.employeeId)"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
